@@ -1,0 +1,28 @@
+:root {
+  --primary-color: hsl(130, 55%, 55%);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  transition: all ease-in-out .1s;
+}
+
+.title:hover {
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: 999;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.upload-error {
+  color: #d44;
+}
