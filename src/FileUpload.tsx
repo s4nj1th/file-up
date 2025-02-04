@@ -46,7 +46,8 @@ export default function FileUpload() {
     <>
       <form onSubmit={handleSubmit} className="card">
         <input type="file" onChange={handleFileChange} />
-        <button type="submit">Upload</button>
+        <br />
+        <button type="submit" className="upload-btn">Upload</button>
       </form>
       {uploadedFileUrl && (
         <p>
@@ -57,11 +58,7 @@ export default function FileUpload() {
         </p>
       )}
 
-      {fileUploadError && (
-        <p className="upload-error">
-            {fileUploadError}
-        </p>
-      )}
+      {fileUploadError && <p className="upload-error">{fileUploadError}</p>}
     </>
   );
 }

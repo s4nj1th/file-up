@@ -46,11 +46,19 @@ input {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-  margin: 1vh 1vw;
+  margin: 1vh auto;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
+.upload-btn {
+  background-color: var(--primary-color);
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
