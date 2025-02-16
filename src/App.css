@@ -34,6 +34,12 @@ a:hover {
   box-shadow: 0 0 0 1px #ffffff24;
 }
 
+.file-size-inp {
+  width: inherit;
+  min-width: 20vw;
+  max-width: 30vw;
+}
+
 .upload-btn {
   background-color: var(--primary-color);
   color: #1a1a1a;
@@ -47,12 +53,11 @@ a:hover {
 
 .info {
   height: 80vh;
-  padding-bottom: 20vh;
+  padding-bottom: 10vh;
 }
 
 .graph {
   max-width: 40vw;
   filter: invert(1) hue-rotate(180deg);
   border-radius: 6px;
-  box-shadow: 0 0 0 1px #ffffff24;
 }
