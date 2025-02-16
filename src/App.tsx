@@ -1,15 +1,20 @@
-import Filler from './Filler';
-import './App.css'
-import FileUpload from './FileUpload';
+import Filler from "./Filler";
+import "./App.css";
+import FileUpload from "./FileUpload";
+import Info from "./Info";
 
 function App() {
-
   return (
     <>
-    <Filler />
-    <FileUpload />
+      <div className="app">
+        <Filler />
+        <FileUpload />
+      </div>
+      <div className="info">
+        <Info />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

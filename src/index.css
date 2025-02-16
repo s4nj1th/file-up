@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #000;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,28 +43,15 @@ input {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-<<<<<<< HEAD
-  background-color: hsl(0, 0, 4%, 1);
-=======
-  background-color: #1a1a1a;
->>>>>>> parent of 9906ce4 (calculate lifetime (basic))
+  background-color: hsla(0, 0, 4%, 1) !important;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 1vh auto;
+  box-shadow: 0 0 0 1px #ffffff24;
 }
 
 button:hover {
   border-color: #646cff;
-}
-
-.upload-btn {
-  background-color: var(--primary-color);
-<<<<<<< HEAD
-  color: hsl(0, 0, 4%, 1);
-=======
-  color: #1a1a1a;
->>>>>>> parent of 9906ce4 (calculate lifetime (basic))
-  font-weight: bold;
 }
 
 button:focus,

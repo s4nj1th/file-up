@@ -26,3 +26,10 @@ a:hover {
 .upload-error {
   color: #d44;
 }
+
+.upload-btn {
+  background-color: var(--primary-color);
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
