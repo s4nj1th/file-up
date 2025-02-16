@@ -27,18 +27,23 @@ export default function Info() {
   return (
     <div className="info">
       <img src={String(graph)} className="graph" />
+      <br />
       <form onSubmit={handleSubmit}>
         <input
           type="number"
           name="size"
           id="fileSize"
+          min="0"
+          max="512"
           value={fileSize}
           onChange={handleChange}
           placeholder="Enter file size in MiB"
-          className="border p-2 rounded"
+          className="file-size-inp"
         />
+        <br />
         <button
           type="submit"
+          className="file-size-btn"
         >
           Calculate Lifetime
         </button>

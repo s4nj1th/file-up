@@ -27,9 +27,32 @@ a:hover {
   color: #d44;
 }
 
+.file-size-inp,
+.file,
+.file-size-btn {
+  background-color: #0a0a0a;
+  box-shadow: 0 0 0 1px #ffffff24;
+}
+
 .upload-btn {
   background-color: var(--primary-color);
   color: #1a1a1a;
   font-weight: bold;
 }
 
+.app {
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+.info {
+  height: 80vh;
+  padding-bottom: 20vh;
+}
+
+.graph {
+  max-width: 40vw;
+  filter: invert(1) hue-rotate(180deg);
+  border-radius: 6px;
+  box-shadow: 0 0 0 1px #ffffff24;
+}
