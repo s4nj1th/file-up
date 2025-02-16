@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #000;
+  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -43,7 +43,11 @@ input {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+<<<<<<< HEAD
   background-color: hsl(0, 0, 4%, 1);
+=======
+  background-color: #1a1a1a;
+>>>>>>> parent of 9906ce4 (calculate lifetime (basic))
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 1vh auto;
@@ -55,7 +59,11 @@ button:hover {
 
 .upload-btn {
   background-color: var(--primary-color);
+<<<<<<< HEAD
   color: hsl(0, 0, 4%, 1);
+=======
+  color: #1a1a1a;
+>>>>>>> parent of 9906ce4 (calculate lifetime (basic))
   font-weight: bold;
 }
 

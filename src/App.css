@@ -7,24 +7,6 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  place-items: center;
-}
-
-.app {
-  height: 100vh;
-  text-align: center;
-  place-items: center;
-}
-
-.info {
-  height: 80vh;
-  text-align: center;
-  place-items: center;
-}
-
-.graph {
-  width: 40vw;
-  margin: auto;
 }
 
 .title {
