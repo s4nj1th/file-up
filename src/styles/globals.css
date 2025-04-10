@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent-color: #4dcb62;
+  --accent-lighter: #6ed37f;
+  --secondary-bg: #66666624;
+  --teritiary-bg: #ffffff24;
+  --sec-bg-opq: #0e0e0e;
+  --red: #cb624d;
+  --accent-trans: #6ed37f88;
+}
+
+:root.light {
+  --background: #ffffff;
+  --foreground: #000000;
+  --accent-color: #4dcb62;
+  --accent-lighter: #6ed37f;
+  --secondary-bg: #6a6a6a24;
+  --teritiary-bg: #dedede24;
+  --red: #cb624d;
+  --sec-bg-opq: #eaeaea;
+  --accent-trans: #6ed37f88;
+}
+
+::selection {
+  @apply bg-[var(--accent-trans)];
+}
+
+body {
+  @apply flex items-center justify-center min-h-screen bg-[var(--background)] text-[var(--foreground)];
+}
+
+a {
+  @apply text-[var(--accent-color)] hover:text-[var(--accent-lighter)] hover:underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply font-bold text-center;
+}
+
+.title {
+  @apply text-6xl hover:text-[var(--accent-color)] hover:text-7xl transition-all;
+}
+
+.btn {
+  @apply px-4 py-2 cursor-pointer bg-[var(--accent-color)] text-[var(--background)] p-2 hover:bg-[var(--accent-lighter)] hover:text-[var(--sec-bg-opq)] transition-all rounded-md font-bold;
+}
+
+.btn-out {
+  @apply px-4 py-2 cursor-pointer bg-[var(--secondary-bg)] text-[var(--accent-color)] p-2 border border-[var(--accent-color)] hover:bg-[var(--teritiary-bg)] hover:text-[var(--accent-lighter)] hover:border-[var(--accent-lighter)] transition-all rounded-md font-bold;
+}
+
+input,
+button {
+  @apply cursor-pointer m-2;
+}
+
+input {
+  @apply bg-[var(--secondary-bg)] p-4 rounded-md;
+}
+
