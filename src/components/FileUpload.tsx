@@ -58,7 +58,7 @@ export default function FileUpload() {
       } else {
         throw new Error("Upload failed");
       }
-    } catch (error) {
+    } catch (_) {
       setFileUploadError("Error uploading file.");
       setUploadedFileUrl("");
     }
