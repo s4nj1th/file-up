@@ -5,7 +5,7 @@ export default function InfoAndCalc() {
     <div className="min-h-screen flex flex-col lg:flex-row items-center justify-center gap-8 p-10">
       <img
         src="/desmos-graph.svg"
-        className="w-full max-w-[1000px] lg:max-w-[40vw] mx-auto lg:mr-0"
+        className="w-full max-w-[1000px] lg:max-w-[40vw] mx-auto lg:mr-0 p-2 border border-dashed border-[var(--teritiary-bg)]"
         alt="Desmos graph"
       />
       <div className="text-left m-6">

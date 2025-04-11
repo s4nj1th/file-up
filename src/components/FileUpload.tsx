@@ -90,7 +90,7 @@ export default function FileUpload() {
             htmlFor="file"
             className="w-full h-full flex flex-col justify-center text-[var(--teritiary-bg)] items-center"
           >
-            Click to upload or drag and drop
+            Drag and drop or click to upload
           </label>
           <input
             id="file"
@@ -140,7 +140,7 @@ export default function FileUpload() {
       )}
 
       {fileUploadError && (
-        <p className="text-[var(--red)] text-center">{fileUploadError}</p>
+        <p className="text-[var(--red-color)] text-center">{fileUploadError}</p>
       )}
     </form>
   );

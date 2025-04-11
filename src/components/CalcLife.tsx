@@ -38,7 +38,7 @@ export default function CalcLife() {
           className="w-full flex-grow px-2 py-2 rounded"
           placeholder="Enter file size in MiB"
         />
-        <button type="submit" className="btn">
+        <button type="submit" className="btn flex-grow w-full">
           Calculate Lifetime
         </button>
       </form>
