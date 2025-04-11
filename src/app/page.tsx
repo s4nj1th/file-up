@@ -5,7 +5,7 @@ import AboutQn from "@/components/AboutQn";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full">
+    <div className="dark h-screen w-full">
       <div className="h-screen w-full">
         <h1 className="mt-20">
           <span className="title m-6">File Up</span>
