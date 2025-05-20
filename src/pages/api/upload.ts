@@ -25,7 +25,9 @@ export default async function handler(
   }
 
   // Parse incoming form data using formidable
-  const form = new formidable.IncomingForm();
+  const form = new formidable.IncomingForm({
+    maxFileSize: 512 * 1024 * 1024,
+  });
 
   form.parse(req, async (err, fields, files) => {
     if (err) {
