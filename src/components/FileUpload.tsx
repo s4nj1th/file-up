@@ -45,18 +45,18 @@ export default function FileUpload() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("https://0x0.st", {
+      const response = await fetch("/api/upload", {
         method: "POST",
         body: formData,
       });
 
-      const text = await response.text();
+      const data = await response.json();
 
-      if (response.ok && text.startsWith("http")) {
-        setUploadedFileUrl(text.trim());
+      if (response.ok && data.url) {
+        setUploadedFileUrl(data.url);
         setFileUploadError("");
       } else {
-        throw new Error("Upload failed");
+        throw new Error(data.error || "Upload failed");
       }
     } catch {
       setFileUploadError("Error uploading file.");
